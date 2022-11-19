@@ -2,13 +2,14 @@ import * as dotenv from 'dotenv';
 import express from 'express';
 dotenv.config();
 
-const port = process.env.PORT || 3333;
+import { categoriesRoutes } from './routes/categories.routes';
 
+const port = process.env.PORT || 3333;
 const app = express();
 
-app.get('/', (req, res) => {
-  res.send('Hello World!');
-});
+app.use(express.json());
+
+app.use('/categories', categoriesRoutes);
 
 app.listen(port, () => {
   console.log(`🚀 Server running on port ${port}`);
