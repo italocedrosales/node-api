@@ -11,9 +11,7 @@
   "paths": {
     "/categories": {
       "post": {
-        "tags": [
-          "Category"
-        ],
+        "tags": ["Category"],
         "summary": "Create a new category",
         "description": "Create a new category",
         "requestBody": {
@@ -38,12 +36,12 @@
           }
         },
         "responses": {
-         "201": {
-          "description": "Category created"
-         },
-         "400": {
-          "description": "Invalid request"
-         },
+          "201": {
+            "description": "Category created"
+          },
+          "400": {
+            "description": "Invalid request"
+          },
           "500": {
             "description": "Internal server error"
           }
