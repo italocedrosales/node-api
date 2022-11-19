@@ -10,11 +10,20 @@
     "type": "git",
     "url": "git+https://github.com/italocedrosales/node-api.git"
   },
-  "keywords": ["api", "node", "express", "typescript"],
+  "keywords": [
+    "api",
+    "node",
+    "express",
+    "typescript"
+  ],
   "author": "Italo Cedro",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/italocedrosales/node-api/issues"
   },
-  "homepage": "https://github.com/italocedrosales/node-api#readme"
+  "homepage": "https://github.com/italocedrosales/node-api#readme",
+  "devDependencies": {
+    "@commitlint/cli": "^17.2.0",
+    "@commitlint/config-conventional": "^17.2.0"
+  }
 }
